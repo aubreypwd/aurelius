@@ -1,0 +1,14 @@
+{
+	"name": "aubreypwd-aurelius",
+	"title": "Aurelius",
+	"category": "text",
+	"icon": "edit",
+	"description": "A Gutenberg block that displays quotes by Marcus Aurelius.",
+	"textdomain": "aubreypwd-aurelius",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
