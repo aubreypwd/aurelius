@@ -3,7 +3,7 @@
  * Plugin Name:     Aurelius
  * Description:     A Gutenberg block that displays quotes by Marcus Aurelius.
  * Version:         1.0.0
- * Author:          Aubrey Portwood <code@aubreypwd.com>
+ * Author:          Aubrey Portwood
  * License:         MIT
  * Text Domain:     aubreypwd/aurelius/ *
  * @since           Nov 12, 2021
