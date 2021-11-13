@@ -5,8 +5,7 @@
  * Version:         1.0.0
  * Author:          Aubrey Portwood <code@aubreypwd.com>
  * License:         MIT
- * Text Domain:     aubreypwd-aurelius
- *
+ * Text Domain:     aubreypwd/aurelius/ *
  * @since           Nov 12, 2021
  * @package         aubreypwd\Aurelius
  */
@@ -40,7 +39,7 @@ function register_block() {
 
 	// Register editor script.
 	wp_register_script(
-		'aubreypwd-aurelius-editor-script',
+		'aubreypwd/aurelius/editor-script',
 		plugins_url( $editor_script, __FILE__ ),
 		$asset_file['dependencies'],
 		$asset_file['version'],
@@ -50,7 +49,7 @@ function register_block() {
 	// Register editor style.
 	if ( file_exists( plugin_dir_path( __FILE__ ) . $editor_style ) ) {
 		wp_register_style(
-			'aubreypwd-aurelius-editor-style',
+			'aubreypwd/aurelius/editor-style',
 			plugins_url( $editor_style, __FILE__ ),
 			[ 'wp-edit-blocks' ],
 			filemtime( plugin_dir_path( __FILE__ ) . $editor_style )
@@ -60,7 +59,7 @@ function register_block() {
 	// Register frontend style.
 	if ( file_exists( plugin_dir_path( __FILE__ ) . $frontend_style ) ) {
 		wp_register_style(
-			'aubreypwd-aurelius-style',
+			'aubreypwd/aurelius/style',
 			plugins_url( $frontend_style, __FILE__ ),
 			[],
 			filemtime( plugin_dir_path( __FILE__ ) . $frontend_style )
@@ -69,15 +68,15 @@ function register_block() {
 
 	// Register block with WordPress.
 	register_block_type( 'aubreypwd/aurelius', [
-		'editor_script' => 'aubreypwd-aurelius-editor-script',
-		'editor_style'  => 'aubreypwd-aurelius-editor-style',
-		'style'         => 'aubreypwd-aurelius-style',
+		'editor_script' => 'aubreypwd/aurelius/editor-script',
+		'editor_style'  => 'aubreypwd/aurelius/editor-style',
+		'style'         => 'aubreypwd/aurelius/style',
 	] );
 
 	// Register frontend script.
 	if ( file_exists( plugin_dir_path( __FILE__ ) . $frontend_script ) ) {
 		wp_enqueue_script(
-			'aubreypwd-aurelius-frontend-script',
+			'aubreypwd/aurelius/frontend-script',
 			plugins_url( $frontend_script, __FILE__ ),
 			$asset_file['dependencies'],
 			$asset_file['version'],
