@@ -19,8 +19,8 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Register the block with WordPress.
  *
- * @author aubreypwd
- * @since 0.1.0
+ * @author Aubrey Portwood <code@aubreypwd.com>
+ * @since 1.0.0
  */
 function register_block() {
 

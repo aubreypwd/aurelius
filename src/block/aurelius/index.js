@@ -20,11 +20,6 @@ registerBlockType( 'aubreypwd/aurelius', {
 		__( 'Aurelius', 'aurelius' ),
 	],
 	attributes: {
-		content: {
-			type: 'array',
-			source: 'children',
-			selector: 'p',
-		},
 	},
 	edit,
 	save,

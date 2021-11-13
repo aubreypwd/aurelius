@@ -1,4 +1,4 @@
-import { RichText } from '@wordpress/block-editor';
+import AureliusQuote from './components/aurelius-quote.jsx';
 
 /**
  * The save function defines the way in which the different attributes should
@@ -6,7 +6,7 @@ import { RichText } from '@wordpress/block-editor';
  * editor into `post_content`.
  *
  * @author WebDevStudios
- * @since 0.0.1
+ * @since 1.0.0
  * @link https://developer.wordpress.org/block-editor/developers/block-api/block-edit-save/#save
  *
  * @param {Object} [props] Properties passed from the editor.
@@ -14,17 +14,12 @@ import { RichText } from '@wordpress/block-editor';
  */
 export default function Save( props ) {
 	const {
-		attributes: {
-			content,
-		},
-		className,
+		attributes: {},
 	} = props;
 
 	return (
-		<RichText.Content
-			className={ className }
-			tagName="p"
-			value={ content }
-		/>
+		<blockquote>
+			<AureliusQuote />
+		</blockquote>
 	);
 }
