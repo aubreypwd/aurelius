@@ -68,11 +68,11 @@ function register_block() {
 	}
 
 	// Register block with WordPress.
-	register_block_type( 'aubreypwd/aurelius', array(
+	register_block_type( 'aubreypwd/aurelius', [
 		'editor_script' => 'aubreypwd-aurelius-editor-script',
 		'editor_style'  => 'aubreypwd-aurelius-editor-style',
 		'style'         => 'aubreypwd-aurelius-style',
-	) );
+	] );
 
 	// Register frontend script.
 	if ( file_exists( plugin_dir_path( __FILE__ ) . $frontend_script ) ) {
