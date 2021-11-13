@@ -5,7 +5,8 @@
  * Version:         1.0.0
  * Author:          Aubrey Portwood
  * License:         MIT
- * Text Domain:     aubreypwd/aurelius/ *
+ * Text Domain:     aubreypwd-aurelius
+ *
  * @since           Nov 12, 2021
  * @package         aubreypwd\Aurelius
  */
@@ -31,7 +32,7 @@ function register_block() {
 
 	// Verify we have an editor script.
 	if ( ! file_exists( plugin_dir_path( __FILE__ ) . $editor_script ) ) {
-		wp_die( esc_html__( 'Whoops! You need to run `npm run build` for the aubreypwd Aurelius first.', 'aurelius' ) );
+		wp_die( esc_html__( 'Whoops! You need to run `npm run build` for the aubreypwd Aurelius first.', 'aubreypwd-aurelius' ) );
 	}
 
 	// Autoload dependencies and version.
