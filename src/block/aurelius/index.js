@@ -12,7 +12,7 @@ import './style.scss';
  * @link https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
 registerBlockType( 'aubreypwd/aurelius', {
-	title: __( 'aubreypwd Aurelius', 'aurelius' ),
+	title: __( 'Aurelius', 'aurelius' ),
 	icon: 'edit',
 	category: 'common',
 	keywords: [

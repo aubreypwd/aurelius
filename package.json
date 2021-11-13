@@ -41,7 +41,8 @@
 		"extends": "stylelint-config-wordpress/scss",
 		"ignoreFiles": [
 			"build/**",
-			"vendor/**"
+			"vendor/**",
+			"node_modules/**"
 		],
 		"rules": {
 			"block-no-empty": null,
@@ -49,7 +50,8 @@
 			"font-family-no-missing-generic-family-keyword": null,
 			"max-line-length": null,
 			"no-descending-specificity": null,
-			"no-duplicate-selectors": null
+			"no-duplicate-selectors": null,
+			"string-quotes": null
 		}
 	},
 	"scripts": {
