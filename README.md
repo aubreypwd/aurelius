@@ -1,8 +1,8 @@
 # Aurelius
 
-This is supposed to become a block that shows a random quote from Marcus Aurelius.
+This is a block that renders a random quote by Marcus Aurelius in the Editor and on the Frontend when it is placed on a page or post.
 
-# TODO
+- It does not save the quote, they are always random
+- You can add new blocks to the Editor and it will find a quote for you
+- Uses https://stoic-wisdom.com/api by https://davidmcgregor.dev/
 
-- [ ] Figure out how to create a block that isn't about editing, just shows something random
-	+ [ ] Might have to do a course first

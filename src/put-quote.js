@@ -84,7 +84,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	 * @since  Monday, December 27, 2021
 	 */
 	function periodicallyRenderNewQuotes() {
-		setInterval( renderNewQuotes, 50 );
+		setInterval( renderNewQuotes, 1 );
 	}
 
 	/**
