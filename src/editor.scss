@@ -1,3 +1,9 @@
-#wp-block-aubreypwd-aurelius {
-	color: green;
+.wp-block-aubreypwd-aurelius {
+	background-color: #00000030;
+	min-height: 27px;
+
+	&.rendered {
+		background-color: transparent;
+		min-height: auto;
+	}
 }

@@ -27,7 +27,7 @@ function register_block() {
 	// Define our assets.
 	$editor_script   = 'build/index.js';
 	$editor_style    = 'build/index.css';
-	$frontend_style  = 'build/style-index.css';
+	$frontend_style  = 'build/frontend.css';
 	$frontend_script = 'build/frontend.js';
 
 	// Verify we have an editor script.

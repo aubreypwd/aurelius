@@ -8,6 +8,13 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	let quotes = [];
 
 	/**
+	 * Blockquotes in the DOM from renderNewQuotes.
+	 *
+	 * @type {Array}
+	 */
+	let blockQuotes = [];
+
+	/**
 	 * Filter out only Marcus Aurelius quotes.
 	 *
 	 * @author Aubrey Portwood <aubrey@webdevstudios.com>
@@ -39,9 +46,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	 */
 	function renderNewQuotes() {
 
-		const blockQuotes = document.getElementsByClassName( 'wp-block-aubreypwd-aurelius' );
-
-		console.log( blockQuotes );
+		blockQuotes = document.getElementsByClassName( 'wp-block-aubreypwd-aurelius' );
 
 		if ( 0 >= blockQuotes.length ) {
 			return; // No blockquotes on the page.
@@ -53,11 +58,15 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 		for ( const element of blockQuotes ) {
 
-			if ( '' !== element.innerText ) {
-				return; // Has something (rendered).
+			if ( element.classList.contains( 'rendered' ) ) {
+				continue;
 			}
 
+			// Render in a random quote.
 			element.innerText = quotes[ Math.floor( Math.random() * quotes.length ) ];
+
+			// Note this element was rendered, so it doesn't get rendered again.
+			element.classList.add( 'rendered' );
 		}
 	}
 
@@ -68,7 +77,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	 * @since  Monday, December 27, 2021
 	 */
 	function periodicallyRenderNewQuotes() {
-		setInterval( renderNewQuotes, 200 );
+		setInterval( renderNewQuotes, 500 );
 	}
 
 	/**
