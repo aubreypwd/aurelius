@@ -12,7 +12,7 @@ import { registerBlockType } from '@wordpress/blocks';
  */
 registerBlockType( 'aubreypwd/aurelius', {
 	title: __( 'Aurelius', 'aurelius' ),
-	icon: 'edit',
+	icon: 'editor-quote',
 	category: 'common',
 	keywords: [
 		__( 'aubreypwd', 'aurelius' ),

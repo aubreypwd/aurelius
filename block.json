@@ -2,7 +2,7 @@
 	"name": "Aurelius",
 	"title": "Aurelius",
 	"category": "text",
-	"icon": "edit",
+	"icon": "editor-quote",
 	"description": "A Gutenberg block that displays quotes by Marcus Aurelius.",
 	"textdomain": "aubreypwd-aurelius",
 	"supports": {
