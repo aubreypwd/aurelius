@@ -1,6 +1,13 @@
 document.addEventListener( 'DOMContentLoaded', () => {
 
 	/**
+	 * Where we would store quotes in local storage.
+	 *
+	 * @type {String}
+	 */
+	const cacheKey = 'aurelius_quotes_773d6310cb469462e79d0f7ff0a55840';
+
+	/**
 	 * The evenual quotes we will pick from.
 	 *
 	 * @type {Array}
@@ -88,10 +95,28 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	 */
 	function fetchServerQuotes() {
 
+		const cache = JSON.parse( window.localStorage.getItem( cacheKey ) );
+
+		if ( Array.isArray( cache ) ) {
+
+			// We stored this in local storage, just use that.
+			quotes = cache;
+
+			// Now render quotes with it.
+			periodicallyRenderNewQuotes();
+
+			// And don't fetch.
+			return;
+		}
+
 		// First try and get a quote from this server.
 		fetch( 'https://stoic-server.herokuapp.com/search/marcus_aurelius' ).then( ( response ) => response.json() ).then( ( serverQuotes ) => {
 
+			// Store them for runtime.
 			quotes = filterServerQuoteBody( filterServerMarcusQuotes( serverQuotes ) );
+
+			// Also cache them in local storage.
+			window.localStorage.setItem( cacheKey, JSON.stringify( quotes ) );
 
 		} ).catch( () => {
 
