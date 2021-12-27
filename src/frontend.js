@@ -1,2 +1,1 @@
-// This file is only enqueued in the frontend.
-// Delete file and webpack.config.js if unused and rebuild.
+import './block/aurelius/editor.js'; // Same as the editor view.

@@ -1,5 +1,4 @@
 import './editor.scss';
-import AureliusQuote from './components/aurelius-quote.jsx';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -17,8 +16,6 @@ export default function Edit( props ) {
 	} = props;
 
 	return (
-		<blockquote>
-			<AureliusQuote />
-		</blockquote>
+		<blockquote id="wp-block-aubreypwd-aurelius"></blockquote>
 	);
 }
