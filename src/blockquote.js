@@ -7,6 +7,6 @@
  */
 export default function BlockQuote() {
 	return (
-		<blockquote id="wp-block-aubreypwd-aurelius"></blockquote>
+		<blockquote className="wp-block-aubreypwd-aurelius"></blockquote>
 	);
 }
