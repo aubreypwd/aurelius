@@ -1,2 +1,2 @@
-import './put-quote.js';
+import './quoteify.js';
 import './editor.scss';
