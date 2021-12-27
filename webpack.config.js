@@ -1,5 +1,5 @@
 /**
- * Optional Webpack config.
+ * Public Webpack Confic
  *
  * This config includes the `@wordpress/scripts` defaults, along with
  * an entry path for `/src/frontend.js`. The frontend entry path is
