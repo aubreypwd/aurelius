@@ -53,7 +53,8 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	 */
 	function renderNewQuotes() {
 
-		blockQuotes = document.getElementsByClassName( 'wp-block-aubreypwd-aurelius' );
+		// Select everything that isn't rendered.
+		blockQuotes = document.querySelectorAll( '.wp-block-aubreypwd-aurelius:not(.rendered)' );
 
 		if ( 0 >= blockQuotes.length ) {
 			return; // No blockquotes on the page.
