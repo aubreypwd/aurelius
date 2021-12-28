@@ -10,6 +10,10 @@ https://youtu.be/CSiVJzjiJVA
 
 ---
 
+See [Releases](https://github.com/aubreypwd/aurelius/releases) for help installing.
+
+---
+
 ## TODO
 
 - [ ] Add way to save the quote statically to the DB
