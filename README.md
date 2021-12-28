@@ -6,7 +6,10 @@ This is a block that renders a random quote by Marcus Aurelius in the Editor and
 - You can add new blocks to the Editor and it will find a quote for you
 - Uses https://stoic-wisdom.com/api by https://davidmcgregor.dev/
 
-https://youtu.be/CSiVJzjiJVA
+
+[![CleanShot-Google Chrome-Edit Post ‹ aurelius — WordPress-2021-12-27-05 12PM 15](https://user-images.githubusercontent.com/1753298/147514989-162369e3-8335-4740-810d-5a316d63b186.gif)](https://youtu.be/CSiVJzjiJVA)
+
+- **Demo:** https://youtu.be/CSiVJzjiJVA
 
 ---
 
